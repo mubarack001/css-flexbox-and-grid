@@ -1,0 +1,65 @@
+@media (min-width: 375px) and (max-width: 1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .head {
+        border-style: none;
+        margin: 20px;
+        margin-top: 45px;
+        margin-left: 65px;
+        margin-bottom: 8%;
+        letter-spacing: 5px;
+        word-spacing: 20px;
+    }
+    .head a {
+        text-decoration: none;
+        color: rgb(241, 40, 25);
+    }
+    a:hover {
+        color: #f86808;
+        text-decoration: none;
+    }
+    body {
+        background-color: rgb(6, 6, 37);
+        display: flex;
+        height: 100vh;
+    }
+    main {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 'a a b' 'a a b' 'c d d' 'c e e';
+        gap: 0.7em;
+        width: 50%;
+        margin: auto;
+    }
+    main div {
+        padding: 2em;
+        text-align: center;
+    }
+    .con-a {
+        background-color: rgb(250, 70, 15);
+        grid-area: a;
+        color: rgb(250, 70, 15);
+    }
+    .con-b {
+        background-color: rgb(248, 174, 14);
+        grid-area: b;
+        color: rgb(248, 174, 14);
+    }
+    .con-c {
+        background-color: rgb(44, 182, 44);
+        grid-area: c;
+        color: rgb(44, 182, 44);
+    }
+    .con-d {
+        background-color: rgb(8, 195, 252);
+        grid-area: d;
+        color: rgb(8, 195, 252);
+    }
+    .con-e {
+        background-color: rgb(8, 195, 252);
+        grid-area: e;
+        color: rgb(8, 195, 252);
+    }
+}
